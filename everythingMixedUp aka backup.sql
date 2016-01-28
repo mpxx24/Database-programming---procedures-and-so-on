@@ -172,7 +172,7 @@ while @iterator <> 1001
 		set @iterator = @iterator + 1
 	end
 
-insert into Schools(schoolName, numberOfStudents, townID)
+insert into Schools(schoolName, schoolNumberOfStudents, townID)
 select t.sName, t2.sNumberOfStudents, t3.sTownId
 from @tempSNAME t
 inner join @tempSNUMBEROFSTUDENTS t2 on t2.tempIndex = t.tempIndex
